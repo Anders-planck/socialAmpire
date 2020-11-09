@@ -1,0 +1,495 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    text-decoration: none;
+    background-color: #d6d6d6;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    opacity: 0.8;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.header .logo {
+    margin: 0 20px;
+    height: 100%;
+}
+
+.header .logo h1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding: 15px;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: cursive;
+    transition: .3s;
+    font-size: 30px;
+    text-shadow: 2px 2px #f1f1f1;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.header .logo h1:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.header .menu {
+    display: flex;
+    height: 60px;
+    height: 100%;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header .menu i {
+    margin-right: 10px;
+}
+
+.header .menu a {
+    text-align: center;
+    height: 100%;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    opacity: .6;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: cursive;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-left: 10px;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    transition: all .3s ease-in-out;
+}
+
+.header .menu a:hover {
+    background-color: #131111;
+    opacity: 1;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #181616;
+    transform: scale(.90);
+
+}
+
+
+/** fine header*/
+
+
+/** inizio body*/
+
+.container {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.container .option {
+    width: 20%;
+    min-height: 100%;
+}
+
+.container .option .container {
+    width: 100%;
+    display: block;
+    min-height: 100%;
+    margin-top: 50px;
+}
+
+.container .profilo {
+    width: 20%;
+    min-height: 100%;
+}
+
+.container .publication {
+    width: 40%;
+    min-height: 100%;
+    margin: 0 50px;
+}
+
+
+/** option*/
+
+.container .option .container a {
+    font-family: 'Balsamiq Sans', cursive;
+    display: block;
+    width: 70%;
+    margin-left: 30px;
+    margin-top: 8px;
+    padding: 5px;
+    text-decoration: none;
+    color: #050505;
+    opacity: .6;
+    text-transform: capitalize;
+    border: none;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.container .option .container a span {
+    float: right;
+    width: 75%;
+}
+
+.container .option .container a i {
+    float: left;
+    width: 25%;
+}
+
+.container .option .container .rotate2:hover {
+    opacity: 1;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    transform: scale(1.2) rotate(2deg);
+    -webkit-transform: scale(1.2) rotate(2deg);
+    -moz-transform: scale(1.2) rotate(2deg);
+    -ms-transform: scale(1.2) rotate(2deg);
+    -o-transform: scale(1.2) rotate(2deg);
+}
+
+.container .option .container .rotate-2:hover {
+    opacity: 1;
+    border-radius: 6px;
+    background-color: #f1f1f1;
+    transform: scale(1.2) rotate(-2deg);
+    -webkit-transform: scale(1.2) rotate(-2deg);
+    -moz-transform: scale(1.2) rotate(-2deg);
+    -ms-transform: scale(1.2) rotate(-2deg);
+    -o-transform: scale(1.2) rotate(-2deg);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+
+/** publication*/
+
+.publication {
+    overflow: hidden;
+}
+
+.publication .title,
+.profilo .ultimo-aggiornamento .title {
+    width: 100%;
+    height: 85px;
+    background-color: #f1f1f1;
+    text-align: left;
+    position: relative;
+}
+
+.publication .title span,
+.profilo .ultimo-aggiornamento .title span {
+    display: inline-block;
+    width: 70px;
+    margin: 0px 5px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(120deg, #2980b9, #34495e, #3498db);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.publication .info,
+.profilo .ultimo-aggiornamento .info {
+    display: inline-block;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    text-align: left;
+}
+
+.publication .info h4,
+.profilo .ultimo-aggiornamento .info h4 {
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 1px;
+}
+
+.publication .info p,
+.profilo .info p {
+    overflow: hidden;
+    margin: 5, 10px;
+    font-size: 12px;
+    font-family: fantasy;
+    color: #bebaba;
+}
+
+.publication .container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.publication .container .article {
+    width: 100%;
+    overflow: hidden;
+}
+
+.publication .container .article .foto {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.publication .container .article .foto img {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    animation: glisse 10s ease-in-out infinite;
+    animation-delay: 3s;
+    -webkit-animation: glisse 10s ease-in-out infinite;
+}
+
+@keyframes glisse {
+    0%,
+    10% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    33%,
+    43% {
+        transform: translateY(-500px);
+        -webkit-transform: translateY(-500px);
+        -moz-transform: translateY(-500px);
+        -ms-transform: translateY(-500px);
+        -o-transform: translateY(-500px);
+    }
+    66%,
+    76% {
+        transform: translateY(-1000px);
+        -webkit-transform: translateY(-1000px);
+        -moz-transform: translateY(-1000px);
+        -ms-transform: translateY(-1000px);
+        -o-transform: translateY(-1000px);
+    }
+    100% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+}
+
+.publication .container .article .commentaire,
+.profilo .ultimo-aggiornamento .commentaire {
+    font-size: 15px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.publication .container .article .commentaire p,
+.profilo .ultimo-aggiornamento .commentaire p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    line-height: 1.6rem;
+}
+
+.publication .container .article .voto {
+    width: 100%;
+    height: 60px;
+    background-color: #f1f1f1;
+    padding: 10px 5px;
+    margin-top: 2px;
+    margin-bottom: 20px
+}
+
+.publication .container .article .voto .piace {
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding: 10px;
+    color: #bebaba;
+    cursor: pointer;
+}
+
+.publication .container .article .voto .comment {
+    width: 45%;
+    float: right;
+    text-align: right;
+    padding: 10px;
+    color: #bebaba;
+    cursor: pointer;
+}
+
+.publication .container .article .voto .comment i:hover,
+.publication .container .article .voto .piace i:hover {
+    color: #050505;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.publication .container .article .voto .comment i,
+.publication .container .article .voto .piace i {
+    transition: all .3s ease-in-out;
+    font-size: 1.8rem;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+.profilo .ultimo-aggiornamento {
+    margin-bottom: 20px;
+}
+
+.profilo .suggection {
+    width: 100%;
+    color: #050505;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.profilo .suggection h3 {
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 3px solid #050505;
+}
+
+.profilo .suggection .amis {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: left;
+    margin-top: 15px;
+    position: relative;
+    padding: 5px;
+}
+
+.profilo .suggection .amis span {
+    width: 80px;
+    display: inline-block;
+    height: 80px;
+    color: #bebaba;
+    margin-right: 8px;
+    border: none;
+    background-color: #333333;
+}
+
+.profilo .suggection .ajout .info,
+.profilo .suggection .ajout .ajouter {
+    display: block;
+}
+
+.profilo .suggection .ajout .info {
+    margin-bottom: 1px;
+}
+
+.profilo .suggection .ajout .info h4 {
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+    text-transform: capitalize;
+    font-weight: 900;
+    padding: 1px;
+}
+
+.profilo .suggection .ajout .info p {
+    overflow: hidden;
+    margin: 5, 10px;
+    font-size: 12px;
+    font-family: fantasy;
+    color: #333333;
+}
+
+.profilo .suggection .ajout .ajouter a {
+    text-decoration: none;
+    color: #050505;
+    padding: 2px;
+}
+
+.profilo .suggection .ajout .ajouter a i {
+    margin-right: 10px;
+    color: #2980b9;
+    font-size: 20px;
+}
+
+@media screen and (max-width:870px) {
+    .header .logo,
+    .header .menu {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 10px;
+    }
+    .header {
+        display: block;
+        height: 180px;
+        position: static;
+    }
+    .container {
+        display: block;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container .option {
+        width: 100%;
+    }
+    .container .option .container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .container .publication {
+        width: 100%;
+    }
+    .container .profilo {
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: 0 40px;
+        overflow: hidden;
+    }
+    .profilo .ultimo-aggiornamento {
+        width: 100%;
+        padding: 5px;
+    }
+}
